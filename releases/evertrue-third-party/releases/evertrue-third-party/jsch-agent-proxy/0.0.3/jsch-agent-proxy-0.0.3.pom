@@ -1,0 +1,62 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>evertrue-third-party</groupId>
+  <artifactId>jsch-agent-proxy</artifactId>
+  <version>0.0.3</version>
+  <packaging>jar</packaging>
+
+  <name>jsch-agent-proxy</name>
+  <url>https://github.com/ymnk/jsch-agent-proxy</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>com.jcraft</groupId>
+      <artifactId>jsch</artifactId>
+      <version>0.1.48</version>
+    </dependency>
+    <dependency>
+      <groupId>net.java.dev.jna</groupId>
+      <artifactId>platform</artifactId>
+      <version>3.4.0</version>
+    </dependency>
+    <dependency>
+      <groupId>net.java.dev.jna</groupId>
+      <artifactId>jna</artifactId>
+      <version>3.4.0</version>
+    </dependency>
+
+  </dependencies>
+
+  <repositories>
+    <!-- -->
+    <repository>
+      <id>evertrue-third-party</id>
+      <url>https://github.com/evercraig/mavenrepo/raw/master/releases</url>
+    </repository>
+    <!-- Use the Maven Central Repository. -->
+    <repository>
+      <id>maven-central</id>
+      <url>http://repo1.maven.org/maven2</url>
+    </repository>
+  </repositories>
+
+  <distributionManagement>
+    <!-- These are dummy URLs as distribution happens with a local git tree. -->
+    <repository>
+      <id>evertrue-third-party</id>
+      <url>https://github.com/evercraig/mavenrepo/raw/master/releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>evertrue-third-party-SNAPSHOT</id>
+      <url>https://github.com/evercraig/mavenrepo/raw/master/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+</project>
